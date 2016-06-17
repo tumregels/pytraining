@@ -23,3 +23,37 @@ elif x < 10 :
 else :
     print('LARGE')
 print('All done')
+
+
+for word in ['stop', 'desktop', 'post', 'top']:
+    if 'top' in word:
+        print(word)
+print('Done.')
+
+x='Python'
+while x:
+    print(x)
+    x=x[1:]
+    
+answer = "no"
+while answer == "no":
+        answer = input("Are we there? ")
+print("We're there!")
+
+epsilon = 1.0
+while 1.0 + epsilon > 1.0:
+    epsilon = epsilon / 2.0
+    print(epsilon)
+
+epsilon = 2.0 * epsilon
+print(epsilon)
+
+num=6
+while num > 0:
+    print (‘*’ * num)
+    num = num-1
+    
+
+
+
+
