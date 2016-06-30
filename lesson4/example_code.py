@@ -10,7 +10,7 @@ print('\n',s1,'\n',s2,'\n',s3,'\n',s4)
 
 days = ['Sun', 'Mon', 'Tue', 'Wed','Thur', 'Fri', 'Sat']
 numbers = [1,2,3,4,5,6,7,8,9,10]
-
+lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 
 numbers = [1,2,3,4,5]
 numbers_same = numbers
