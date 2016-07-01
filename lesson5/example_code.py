@@ -82,8 +82,8 @@ for <variable> in <sequence>:
 
 >>> name = 'Apple'
 >>> for char in name:
-	print(char)
-	
+        print(char)
+
 A
 p
 p
@@ -102,7 +102,7 @@ top
 >>> content = infile.read() 
 >>> for char in content:
         print(char, end='')
-		
+
 >>> infile = open('test.txt') 
 >>> lines = infile.readlines() 
 >>> for line in lines:
@@ -121,11 +121,11 @@ top
 
 7 24 41 58 75 92
 
->>> for i in range(len('world')):
-	print(i, end=' ')
+for i in range(len('world')):
+    print(i, end=' ')
 
-	
-0 1 2 3 4
+
+
 
 >>> pets = ['cat', 'dog', 'fish', 'bird']
 
@@ -146,7 +146,7 @@ True
 False
 
 def checkSorted(lst):
-	'return True if lst is increasing False otherwise'
+    'return True if lst is increasing False otherwise'
     #for i in ...:
         # i = 0, 1, 2, ..., len(lst)-2
         #if ith elem > i+1th elem:
