@@ -67,6 +67,12 @@ def ignore(table):
             print(num, end=' ')
         print() 
 
+table = [
+  [2, 3, 0, 6],
+  [0, 3, 4, 5],
+  [4, 5, 6, 0]
+]
+
 
 def before(table):
     for row in table:
@@ -83,6 +89,26 @@ employee = {
 	'100-01': ['Kiazh', 'Damyan']}
 
 days = {'Mo': 1, 'Tu': 2, 'Th': 4, 'W': 3}
+
+emp = {[1,2]:1,[2,3]:3} # error
+
+days = {'Mo':1, 'Tu':2, 'W':3}
+
+days2 = {'Tu':2, 'Fr':5}
+
+def complete(abbreviation):
+    '''returns day of the week 
+    corresponding to abbreviation
+    '''
+    days = {'Mo': 'Monday', 
+	    'Tu':'Tuesday', 
+	    'We': 'Wednesday',
+	    'Th': 'Thursday', 
+	    'Fr': 'Friday', 
+	    'Sa': 'Saturday',
+	    'Su':'Sunday'}
+    return days[abbreviation]
+
 
 def frequency(itemList):
     'returns frequency of items in itemList'
