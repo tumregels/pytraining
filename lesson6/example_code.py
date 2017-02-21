@@ -143,6 +143,12 @@ phonebook = {
 	('Vlad', 'Tundyan'):'34-56-78',
 	('Kiazh', 'Damyan'):'48-76-54'
 }
+
+phonebook = {
+	'Arm':'56-78-90',
+	'Vlad':'34-56-78',
+	'Kiazh':'48-76-54'
+}
    
 def lookup(phonebook):
     while True:
