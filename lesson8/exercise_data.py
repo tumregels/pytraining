@@ -561,3 +561,16 @@ banana orange cucumber onion
 >>> d = {'fruit1':'banana','fruit2':'orange','veg1': 'cucumber', 'veg2':'onion'}
 >>> f(**d)
 banana orange cucumber onion
+
+while True:
+    nums = input('Enter 2 digits (format: x y):')
+    (x,y) = nums.split()
+    try:
+        # code
+    except
+         # code
+    except
+         # code
+    except
+         # code
+
