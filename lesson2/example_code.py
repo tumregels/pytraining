@@ -13,6 +13,24 @@ if x > 1 :
     print('More than one')
     if x < 100 : 
         print('Less than 100')
+        
+if temp > 86:
+    print('It is hot!')
+    print(' drink liquids.')
+    print('Goodbye.')
+        
+name = input('Enter your first name: ')
+text = 'Hello' + name
+print(text)
+print('Welcome to the world of Python!')
+
+x = input('Enter number:')
+y = 2*int(x)
+print(y)
+
+y = 2*int(input('Enter number:'))
+print(y)
+
 
 print('All done')
 
@@ -23,6 +41,18 @@ elif x < 10 :
 else :
     print('LARGE')
 print('All done')
+
+for x in range(0, 5):
+    print('hello')
+    
+x = 0
+while x < 5:
+    print('hello')
+    x =x + 1
+    
+name = 'Apple'
+for char in name:
+    print(char)
 
 
 for word in ['stop', 'desktop', 'post', 'top']:
