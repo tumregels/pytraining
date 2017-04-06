@@ -1,15 +1,10 @@
-# debugging
-def h():
-    print('inside h')
-    
-def k():
-    print('Inside k')
-    h()
-    
-def main():
-    k()
-    
-main()
+def fibonacci(bound):
+    p = 1 # previous	        
+    c = 1 # current	        
+    while c <= bound:
+        p,c = c,p+c
+    return c
+
 
 def hello():
     '''a greeting service
@@ -19,7 +14,6 @@ def hello():
         name = input(
 		'What is your name? ')
         print('Hello '+ name)
-
 
 
 def cities():
@@ -45,6 +39,7 @@ def cities2():
 
         lst.append(city)
 
+	
 def cities3():
     lst = []
     while True:
@@ -183,46 +178,43 @@ d = {'a':10, 'b':1, 'c':22}
 def topten(filename):
     pass
     
-filename = 'romeo.txt'
+filename = 'therepublic.txt'
 topten(filename)
 
 
->>> t
-[('a', 10), ('c', 22), ('b', 1)]
->>> t.sort()
->>> t
-[('a', 10), ('b', 1), ('c', 22)]
->>> sorted(t)
-[('a', 10), ('b', 1), ('c', 22)]
+t = [('a', 10), ('c', 22), ('b', 1)]
+t.sort()
+t
+# [('a', 10), ('b', 1), ('c', 22)]
+sorted(t)
+# [('a', 10), ('b', 1), ('c', 22)]
 
 
->>> d = {'a':10, 'b':1, 'c':22}
->>> d.items()
-dict_items([('a', 10), ('c', 22), ('b', 1)])
->>> type(d.items())
-<class 'dict_items'>
->>> t = sorted(d.items())
->>> t
-[('a', 10), ('b', 1), ('c', 22)]
->>> type(t)
-<class 'list'>
->>> for k,v in sorted(d.items()):
-	print(k,v)
+d = {'a':10, 'b':1, 'c':22}
+d.items()
+# dict_items([('a', 10), ('c', 22), ('b', 1)])
+type(d.items())
+# <class 'dict_items'>
+t = sorted(d.items())
+t
+#[('a', 10), ('b', 1), ('c', 22)]
+type(t)
+# <class 'list'>
+for k,v in sorted(d.items()):
+    print(k,v)
 
 	
-a 10
-b 1
-c 22
->>> 
+#a 10
+#b 1
+#c 22
 
->>> d = {'a':10, 'b':1, 'c':22}
->>> lst = list()
->>> for k,v in d.items():
-        lst.append((v,k))
+d = {'a':10, 'b':1, 'c':22}
+lst = list()
+for k,v in d.items():
+    lst.append((v,k))
 	
->>> lst
-[(10, 'a'), (22, 'c'), (1, 'b')]
->>> lst.sort(reverse=True)
->>> lst
-[(22, 'c'), (10, 'a'), (1, 'b')]
->>>
+lst
+# [(10, 'a'), (22, 'c'), (1, 'b')]
+lst.sort(reverse=True)
+lst
+# [(22, 'c'), (10, 'a'), (1, 'b')]
